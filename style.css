@@ -1,0 +1,187 @@
+
+/* Fuentes del proyecto */
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+/* Quitar márgenes predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño general */
+body {
+    background-color: hsl(292, 64%, 86%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+/* Tarjeta de receta */
+.recipe {
+    background-color: white;
+    width: 100%;
+    max-width: 736px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Imagen */
+figure {
+    margin-bottom: 30px;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Título principal */
+h1 {
+    font-family: 'Young Serif', serif;
+    color: hsl(24, 5%, 18%);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Títulos secundarios */
+h2 {
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Secciones */
+section {
+    margin-top: 28px;
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+/* Tiempo de preparación */
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.preparation h2 {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    border-top: 1px solid hsl(327, 100%, 85%);
+    margin-top: 30px;
+}
+
+/* Tabla nutricional */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 25px;
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    body {
+        background-color: rgb(248, 180, 241);
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .recipe {
+        padding: 0;
+        border-radius: 0;
+    }
+
+    figure {
+        margin-bottom: 30px;
+    }
+
+    figure img {
+        border-radius: 0;
+    }
+
+    header,
+    section,
+    hr {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .preparation {
+        padding: 22px;
+    }
+}
